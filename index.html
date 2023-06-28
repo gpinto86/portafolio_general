@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--menú encabezado-->
+    <div class ="contenedor-header">
+        <header>
+            <div class ="logo">
+                <a href="#" >Pinthö</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobre_mi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#technical_skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#hobbies" onclick="seleccionar()">Hobbies</a></li>
+                    <li><a href="#formación" onclick="seleccionar()">Formación</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">Proyectos</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="MostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header> 
+    </div>   
+    </div>
+    <!--inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil_portafolio.png" alt="foto perfil">
+            </div>
+            <h1>Gonzalo Pinto Salazar</h1>
+            <h2>Administración de Empresas Data Analyst, FrontEnd</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook" style="color: #f1f4f8;"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram" style="color: #f1f4f8;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin" style="color: #f1f4f8;"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter" style="color: #f1f4f8;"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--sección sobre mi-->
+    <section id="sobre_mi" class="sobremi">
+        <dev class="contenido_seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, Soy Gonzalo Pinto. </span> Estudiante FrondEnd en Alura LATAM, busco oportunidad para adquirir experiencia en (con) HTML, CSS, JS y Python. Me agrada trabajar en equipo, cooperando con todos y ayudando de la mejor manera posible, con gran satisfacción en enseñar y aprender.
+            Busco oportunidades para hacer prácticas en el área de Diseño Páginas Web, que permita mi crecimiento intelectual y a desarrollar mis conocimientos técnicos, para crecer junto a la empresa y a mis compañeros de trabajo.</p>
+            <div class="fila">
+                <!--datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños:</strong>
+                            21-06-1986
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            +(501) 628 7214
+                        </li>
+                        <li>
+                            <strong>E-mail:</strong>
+                            pinto.gonzalo@gmail.com
+                        </li>
+                        <li>
+                            <strong>WebSite:</strong>
+                            www.pintho.com.gt
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                            Duck Run 1, Village, Distrito El Cayo, Belize.
+                        </li>
+                        <li>
+                            <strong>Puesto:</strong>
+                            <span> QA FrondEnd, Freelance</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--intereses-->
+                <div class="col" id="technical_skills">
+                    <h3>Technical Skills:</h3>
+                    <div class="contenedor-skills">
+                        <div class="skills">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skills">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JAVASCRIPT</span>
+                        </div>
+                        <div class="skills">
+                            <i class="fa-brands fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skills">
+                            <i class="fa-brands fa-node"></i>
+                            <span>NODE JS</span>
+                        </div>
+                        <div class="skills">
+                            <i class="fa-brands fa-react"></i>
+                            <span>REACT</span>
+                        </div>
+                        <div class="skills">
+                            <i class="fa-brands fa-css3"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skills">
+                            <i class="fa-brands fa-python"></i>
+                            <span>PYTHON</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </dev>
+
+    </section>
+    <!--seccion hobbies-->
+    <section id="hobbies" class = "hobbies">
+        <div class="col">
+            <h3>Hobbies:</h3>
+            <div class="contenedor-hobbies">
+                <div class="hobbies">
+                    <i class="fa-solid fa-person-running"></i>
+                    <span>RUNING</span>
+                </div>
+                <div class="hobbies">
+                    <i class="fa-solid fa-guitar"></i>
+                    <span>GUITARRA</span>
+                </div>
+                <div class="hobbies">
+                    <i class="fa-solid fa-headphones"></i>
+                    <span>MÚSICA</span>
+                </div>
+                <div class="hobbies">
+                    <i class="fa-solid fa-tv"></i>
+                    <span>SERIES</span>
+                </div>
+                <div class="hobbies">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span>COCINAR</span>
+                </div>
+                <div class="hobbies">
+                    <i class="fa-solid fa-camera"></i>
+                    <span>FOTOGRAFÍA</span>
+                </div>
+                <div class="hobbies">
+                    <i class="fa-sharp fa-solid fa-person-biking"></i>
+                    <span>BICICLETA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CURRICULUM -->
+    <section id="formación" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Certificaciones Online</h4>
+                        <span class="casa">Platzi</span>
+                        <span class="fecha">2014 - 2022</span>
+                        <p>la comunidad más grande de educación en línea. Prepárate en las habilidades más demandadas de la industria digital.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingenieria en Sistemas</h4>
+                        <span class="casa">Universidad Mariano Gálvez de Guatemala</span>
+                        <span class="fecha">2006 - 2013</span>
+                        <p>La Ingeniería en Sistemas tiene como objetivo formar profesionales capaces de crear tecnología, así como de desempeñar una amplia gama de actividades a nivel de dirección, gerencia y desarrollo, en toda clase de organizaciones locales y multinacionales, en el sector académico, público y privado. Nuestros estudiantes aprenden de profesionales destacados y tienen la oportunidad de practicar en laboratorios especialmente equipados.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Perito Administración de Empresas</h4>
+                        <span class="casa">CIEPP</span>
+                        <span class="fecha">2000 - 2005</span>
+                        <p>La carrera de Perito en Administración consiste en estudiar la manera por la cual las empresas obtienen y usan sus recursos con el de cumplir objetivo, alcanzar metas y obtener beneficios, que en la mayoría de los casos se traducen en beneficios económicos. Además, administrar una empresas es un trabajo que se basa en la planificación, organización, dirección y control de los recursos humanos, tecnológicos, materiales, financieros, entre otros; todo ello con la finalidad de lograr alcanzar con éxito los objetivos de las empresas u organizaciones.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Activator</h4>
+                        <span class="casa">Tigo Guatemala</span>
+                        <span class="fecha">2013 - 2022</span>
+                        <p>Empresa líder en telecomunicaciones y estilo de vida digital en Guatemala, con más de 12 millones de usuarios en servicios de móvil, cable e internet. Fundada en 1989 como la primera empresa de telefonía celular, se caracteriza por su innovación, inversión y generación de desarrollo, destinada a contribuir con la transformación digital del país.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Sistema de Computo</h4>
+                        <span class="casa">Hotel Camino Real Tikal</span>
+                        <span class="fecha">2009 - 2013</span>
+                        <p>Hotel Camino Real Tikal vive y existe en medio de la magia de la selva y el mundo Maya, un entorno creado para recordarte que lo más importante es conectar contigo mismo.   Sumergido en la Selva Petenera, Hotel Camino Real ofrece habitaciones rodeadas por naturaleza, frente a uno de los lagos más preciosos del mundo. 
+                        Desde aquí se puede iniciar cualquier aventura, desconectarse del día a día y vivir experiencias sin igual.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Soporte Técnico</h4>
+                        <span class="casa">Asociación Alianza Verde</span>
+                        <span class="fecha">2008 - 2008</span>
+                        <p>En julio de 1998, se constituye la Asociación Alianza Verde, conformada por los miembros fundadores activos del sector privado y comunitario que participó en el foro. Tanto las ONG´s como entidades del sector gubernamental, que participaron en el foro, se comprometieron a acompañar el proceso de la Asociación.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION PORTFOLIO -->
+    <section id="proyectos" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Proyectos</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Experiencia.png" alt="">
+                    <div class="overlay">
+                        <h3>Código Secreto</h3>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Experiencia2.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Juego</h3>
+                        <p>Juego</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Experiencia3.png" alt="">
+                    <div class="overlay">
+                        <h3>Encriptador de Texto</h3>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Experiencia4.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Juego</h3>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- SECCION CONTACTO -->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>Contacto</h2>
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div class="col">
+                        <input type="text" placeholder="Tú Nombre">
+                        <input type="text" placeholder="Número telefónico">
+                        <input type="text" placeholder="Dirección de correo">
+                        <input type="text" placeholder="Tema">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                    <!-- Mapa -->
+                    <div class="col">
+                        <img src="img/mapa_duckrun1.png" alt="">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Duck Run 1, Village, Distrito El Cayo, Belize.
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    Llamanos: +(501) 628 7214 
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Email: pinto.gonzalo@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram" style="color: #f1f4f8;"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
